@@ -377,6 +377,10 @@ footer p {
         padding-left: 0;
     }
 
+    .features-img img {
+        height: 700px;
+    }
+
     footer {
         margin: 0 50px;
     }
