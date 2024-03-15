@@ -19,6 +19,7 @@
     font-size: 0.9rem;
     color: rgb(114, 114, 114);
     line-height: 23px;
+    padding-top: 10px;
 }
 
 /* shared styles end */
@@ -142,6 +143,54 @@ p {
 
 /* teams section end */
 
+/* features section start */
+.feature-container {
+    display: flex;
+    padding: 130px 70px;
+    gap: 90px;
+}
+
+.features-content h1 {
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+
+}
+
+.features-content .card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 20px 30px 10px 30px
+}
+
+.features-img img {
+    max-width: 500px;
+}
+
+.ten-years-badges {
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    text-align: center;
+    padding: 46px;
+}
+
+.ten-years-badges h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+.ten-years-badges p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+/* features section end */
+
 /* facts sections start */
 .facts-container {
     padding: 50px 70px;
@@ -163,23 +212,81 @@ p {
     padding: 30px;
 }
 
-.facts-card-container .extra-padding{
+.facts-card-container .extra-padding {
     padding: 30px 41px;
 }
 
-.card h2, p{
+.card h2,
+p {
     color: rgb(66, 66, 66);
     font-weight: 600;
 }
-.card h2{
+
+.card h2 {
     font-size: 2.8rem;
 }
-.card p{
+
+.card p {
     font-size: 1.4;
 }
 
-
 /* facts sections end*/
+
+/* sponsors section start */
+.sponsors-container>.sponsors-title,
+.sponsors-description {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+.sponsors-container>.sponsors-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+    padding-bottom: 20px;
+}
+
+.sponsors-container>.sponsors-description {
+    font-size: 0.9rem;
+    color: rgb(114, 114, 114);
+    line-height: 23px;
+}
+
+.sponsors-logo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.sponsors-logo img {
+    height: 30px;
+    width: 140px;
+    filter: grayscale(100%);
+}
+
+/* sponsors section end */
+
+
+/* footer section start */
+footer {
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    max-width: 1440px;
+    margin: 50px 240px 0px 240px;
+}
+
+footer p {
+    padding: 25px;
+    color: rgb(66, 66, 66);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+}
+
+/* footer section end */
 
 
 /* responsive media queries */
@@ -189,7 +296,8 @@ p {
     /* universal styles for responsive start*/
     nav,
     .teams-container,
-    .facts-card-container {
+    .facts-card-container,
+    .sponsors-logo {
         flex-direction: column;
         gap: 20px;
         margin-bottom: 50px;
@@ -197,7 +305,6 @@ p {
 
     /* universal styles for responsive end*/
 
-    /* header section start */
     header {
         padding: 20px;
     }
@@ -206,42 +313,47 @@ p {
         font-size: 3.3rem;
     }
 
-    /* header section end */
-
-    /* teams sections start */
     .teams-img-container {
         grid-template-columns: 1fr;
         padding-left: 0;
     }
+
+    footer {
+        margin: 0;
+    }
 }
 
-/* teams section end */
 
 
 
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
 
-    /* header section start */
-    header {
-        padding: 50px;
-    }
-
+    /* universal styles for responsive start*/
     nav,
     .teams-container,
-    .facts-card-container {
+    .facts-card-container,
+    .sponsors-logo {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
         margin-bottom: 50px;
+    }
+
+    /* universal styles for responsive end*/
+
+    header {
+        padding: 50px;
     }
 
     .banner-title {
         font-size: 3.5rem;
     }
 
-    .teams-img-container{
+    .teams-img-container {
         padding-left: 0;
     }
 
-    /* header section end */
+    footer {
+        margin: 0 50px;
+    }
 }
