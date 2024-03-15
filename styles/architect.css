@@ -296,6 +296,12 @@ footer p {
     line-height: 23px;
     text-align: center;
 }
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 144, 14);
+}
 /* footer section end */
 
 
